@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portal Desa Kabupaten Malinau — Kalimantan Utara</title>
+<meta name="description" content="Portal web desa se-Kabupaten Malinau, Provinsi Kalimantan . Jelajahi 17 Kecamatan dan seluruh Desa, serta ikut membangun transparansi desa." />
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS via CDN (dipakai untuk util kecil, styling utama ada di styles.css) -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<!-- ============================= HERO (navbar menyatu transparan) ============================= -->
+<section class="hero" id="beranda">
+  <div class="hero__latar" aria-hidden="true"></div>
+  <div class="hero__watermark" aria-hidden="true"></div>
+
+  <!-- ============================= TOP BAR TRANSPARAN ============================= -->
+  <header class="topbar">
+    <div class="topbar__isi">
+      <div class="topbar__brand">
+        <img src="assets/img/logo/logo-manaliau.png" alt="Logo Kabupaten Malinau" class="topbar__logo" />
+        <div>
+          <div class="topbar__teks-utama">KABUPATEN MALINAU</div>
+          <div class="topbar__teks-sub">Provinsi Kalimantan Utara</div>
+        </div>
+      </div>
+      <nav class="topbar__nav">
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <button class="topbar__menu-hp" id="tombolMenuHp" aria-label="Buka menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    <nav class="topbar__nav-hp" id="navHp">
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <div class="wadah hero__grid">
+    <div class="hero__teks">
+      <div class="hero__badge-klipaa">
+        <i class="fa-solid fa-satellite-dish" aria-hidden="true"></i>
+        <span>Supported by <strong>Klipaa</strong></span>
+      </div>
+
+      <h1 class="hero__judul">Web Desa Anda Ada di Sini</h1>
+      <p class="hero__deskripsi">
+        Kenali potensi setiap desa, bangun informasi desa bersama-sama, dan wujudkan transparansi Kabupaten Malinau — dari wilayah perkotaan hingga pelosok pedalaman Kalimantan Utara.
+      </p>
+
+      <div class="hero__tombol-grup">
+        <a href="#explorer" class="tombol tombol--utama">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          Jelajahi Desa
+        </a>
+        <a href="https://klipaa.id/auth/signup" class="tombol tombol--kedua">
+          <i class="fa-solid fa-user-plus" aria-hidden="true"></i>
+          Buat Akun
+        </a>
+      </div>
+    </div>
+
+    <div class="pimpinan-kartu">
+      <div class="pimpinan-kartu__baris">
+        <div class="pimpinan-kartu__figur">
+          <div class="pimpinan-kartu__bingkai">
+            <img src="assets/img/pimpinan/bupati-malinaw.jpg" alt="..." class="pimpinan-kartu__foto" />
+          </div>
+          <div class="pimpinan-kartu__nama">H. Wempi Wellem Mawa,<br>S.E., M.H</div>
+          <div class="pimpinan-kartu__jabatan">Bupati</div>
+          <div class="pimpinan-kartu__sub">Kabupaten Malinau</div>
+        </div>
+        <div class="pimpinan-kartu__figur">
+          <div class="pimpinan-kartu__bingkai">
+            <img src="assets/img/pimpinan/wakil bupati.jpg" alt="..." class="pimpinan-kartu__foto" />
+          </div>
+          <div class="pimpinan-kartu__nama">Jakaria<br>S.E,. M.SI</div>
+          <div class="pimpinan-kartu__jabatan">Wakil Bupati</div>
+          <div class="pimpinan-kartu__sub">Kabupaten Malinau</div>
+          
+        </div>
+      </div>
+      <div class="pimpinan-kartu__caption">Pimpinan Daerah Kabupaten Malinau</div>
+    </div>
+  </div>
+
+  <svg class="gelombang" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 32 C 240 64 480 0 720 20 C 960 40 1200 8 1440 30 L1440 64 L0 64 Z" fill="#f6f3ea"/>
+  </svg>
+</section>
+
+<!-- ============================= KONTRIBUSI SECTION ============================= -->
+<section class="kontribusi" id="tentang">
+  <div class="wadah kontribusi__grid">
+    <div class="kartu-kontribusi">
+      <img src="assets/img/lain/ilustrasi-kampung1.jpg" alt="Ilustrasi Desa Malinau" class="kartu-kontribusi__ilustrasi" />
+      <div class="kartu-kontribusi__konten">
+        <h2 class="kartu-kontribusi__judul">Kunjungi Desa, dan Beri Kontribusi Nyata</h2>
+        <p class="kartu-kontribusi__teks">
+          Web Desa dikelola bersama antara pemerintah kabupaten dan masyarakat Desa,
+          sehingga setiap potensi dan kebutuhan dapat tersampaikan dengan terbuka.
+        </p>
+      </div>
+
+      <div class="kartu-ajakan">
+        <h3 class="kartu-ajakan__judul">Jangan Tunggu!</h3>
+        <p class="kartu-ajakan__teks">
+          Desa Anda berhak dikenal. Buat akun sekarang dan mulai isi informasi web
+          Desa dalam hitungan menit.
+        </p>
+        <a href="https://play.google.com/store/apps/details?id=com.klipaa.klipaa_mobile" class="tombol tombol--ajakan">
+          Buat Akun Gratis <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>  
+</section>
+
+<!-- ============================= EXPLORER SECTION ============================= -->
+<section class="explorer" id="explorer">
+  <div class="wadah">
+    <div class="explorer__kepala">
+      <h2 class="explorer__judul">JELAJAHI KECAMATAN DI KABUPATEN MALINAU</h2>
+      <p class="explorer__deskripsi">
+        Kabupaten Malinau terdiri dari 15 Kecamatan. Pilih salah satu Kecamatan untuk melihat
+        daftar Desanya, atau cari langsung nama Kecamatan maupun Desa di bawah ini.
+      </p>
+
+      <div class="kotak-cari">
+        <i class="fa-solid fa-magnifying-glass kotak-cari__ikon" aria-hidden="true"></i>
+        <input type="text" id="inputCari" class="kotak-cari__input" placeholder="Cari nama Kecamatan atau Desa..." autocomplete="off" />
+        <button id="tombolResetCari" class="kotak-cari__reset" type="button" aria-label="Hapus pencarian">
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+      </div>
+      <p class="info-hasil" id="infoHasil"></p>
+    </div>
+
+    <div class="pembungkus-grid-Kecamatan">
+      <div class="grid-Kecamatan" id="gridKecamatan"></div>
+    </div>
+
+    <div class="panel-Desa" id="panelDesa" hidden>
+      <div class="panel-Desa__kepala">
+        <h3 class="panel-Desa__judul">
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          <span id="panelDesaJudulTeks">Desa di Kecamatan</span>
+        </h3>
+        <button class="tombol-kembali" id="tombolKembali" type="button">
+          <i class="fa-solid fa-chevron-left" aria-hidden="true"></i> Kembali ke Kecamatan
+        </button>
+      </div>
+      <ul class="daftar-Desa" id="daftarDesa"></ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= STATISTIK SECTION ============================= -->
+<section class="statistik">
+  <div class="wadah statistik__grid">
+    <div>
+      <h2 class="statistik__judul"><a href="https://Malinaukab.go.id">Kabupaten Malinau</a></h2>
+      <p class="statistik__teks">
+       Dikenal sebagai Bumi Intimung, Kabupaten Malinau adalah kabupaten terluas di Kalimantan Utara — wilayah pedalaman tanpa garis pantai yang dipenuhi hutan hujan tropis, pegunungan, dan aliran sungai besar seperti Sungai Malinau, Mentarang, dan Tubu. Melalui portal ini, seluruh Kecamatan dan Desa dapat saling terhubung, berbagi informasi, dan membangun transparansi bersama menuju kesejahteraan warga..
+      </p>
+      <a href="#tentang" class="tombol-selengkapnya">Selengkapnya</a>
+    </div>
+    <div class="statistik__angka-grup">
+      <div class="statistik__angka">
+        <span class="statistik__nilai">15</span>
+        <span class="statistik__label">Kecamatan</span>
+      </div>
+      <div class="statistik__angka">
+        <span class="statistik__nilai" id="angkaPartisipasi">0</span>
+        <span class="statistik__label">Desa</span>
+      </div>
+      <div class="statistik__angka">
+        <span class="statistik__nilai" id="angkaKelurahan">0</span>
+        <span class="statistik__label">Kelurahan</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= FOOTER ============================= -->
+<footer class="footer" id="kontak">
+  <div class="footer__pola" aria-hidden="true"></div>
+  <div class="wadah footer__isi">
+    <div class="footer__nilai-grup">
+      <div class="footer__nilai">
+        <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+        <div>
+          <div class="footer__nilai-judul">Informasi Terpercaya</div>
+          <div class="footer__nilai-teks">Dikelola oleh pemerintah Desa dan diverifikasi.</div>
+        </div>
+      </div>
+      <div class="footer__nilai">
+        <i class="fa-solid fa-lock-open" aria-hidden="true"></i>
+        <div>
+          <div class="footer__nilai-judul">Terbuka untuk Semua</div>
+          <div class="footer__nilai-teks">Akses informasi Desa dengan mudah dan cepat.</div>
+        </div>
+      </div>
+      <div class="footer__nilai">
+        <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+        <div>
+          <div class="footer__nilai-judul">Partisipasi Aktif</div>
+          <div class="footer__nilai-teks">Bersama membangun Desa melalui informasi.</div>
+        </div>
+      </div>
+      <div class="footer__nilai">
+        <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+        <div>
+          <div class="footer__nilai-judul">Terhubung Sepenuhnya</div>
+          <div class="footer__nilai-teks">Seluruh Desa terhubung dalam satu portal.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bawah">
+      <span>© <span id="tahunFooter"></span> Pemerintah Kabupaten Malinau &amp; Himpunan Desa Mandiri Indonesia (HDMI).</span>
+      <a href="#" class="footer__powered">Powered by Klipaa</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
